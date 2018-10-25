@@ -168,9 +168,22 @@ sudo mv composer.phar /usr/bin/composer
 
 #### 8.3 crear un proyecto de prueba en laravel
 
+##### 8.3.1 crear un proyecto con la ultima versión de laravel
+
 ```bash
 composer create-project --prefer-dist laravel/laravel lara01
 ```
+
+##### 8.3.2 crear un proyecto con un versión especifica de laravel
+
+si necesitamos crear una aplicación web con una versión especifica de laravel se agrega al final la versión como podemos observar en el siguiente ejemplo:
+
+```bash
+composer create-project --prefer-dist laravel/laravel lara01  '5.5.*'
+```
+
+podemos apreciar **'5.5.*'** representa la ultima versión LTS al día de hoy [Aquí podemos ver las versiones de laravel](https://laravel.com/docs/releases).
+y como la versión traducida al castellano de la documentación oficial de laravel es la **5.5** ( [podemos encontrar la documentación de laravel traducida aquí](https://docs.laraveles.com/docs/5.5) ) es recomendable usar está versión en este momento.
 
 #### 8.4 verificar el funcionamiento de la nueva aplicación laravel
 
